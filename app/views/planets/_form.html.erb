@@ -1,0 +1,36 @@
+<% if @planet.errors.any? %>
+
+<h3><%= pluralize(@planet.errors.count, "error") %> prohibited this planet from being saved:</h3>
+
+<ul>
+  <% @planet.errors.full_messages.each do |msg| %>
+    <li> <%= msg %> </li>
+  <% end %>
+</ul>
+
+
+<% end %>
+
+
+
+<%= form_for(@planet) do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :flag_url %>
+  <%= f.text_field :flag_url %>
+
+  <%= f.label :lang %>
+  <%= f.text_field :lang %>
+
+  <%= f.label :population %>
+  <%= f.number_field :population %>
+
+  <%= f.label :president %>
+  <%= f.text_field :president %>
+
+  <%= f.submit %>
+
+
+<% end %>

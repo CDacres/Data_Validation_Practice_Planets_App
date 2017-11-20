@@ -1,0 +1,11 @@
+<p><%= planet.name %></p>
+<p><%= planet.population %></p>
+<p><%= planet.president %></p>
+<p><%= planet.lang %></p>
+
+<%= image_tag(planet.flag_url) %>
+
+<br>
+
+<%= link_to "Show Page", planet if action_name == "index" %> |
+<%= link_to "Edit Page", edit_planet_path(planet) %>

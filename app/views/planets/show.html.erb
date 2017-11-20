@@ -1,0 +1,11 @@
+<h1>Planet Show Page</h1>
+
+  <%= render @planet %>
+
+<br>
+
+<%= link_to "Edit", edit_planet_path(@planet) %> |
+<%= link_to "Back", planets_path %> |
+
+<%= link_to "Destroy", @planet, method: :delete, data: { confirm: "Are you sure?" } %>
+

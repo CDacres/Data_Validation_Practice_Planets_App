@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  population: 1
+  flag_url: MyString
+  lang: MyString
+  president: MyString
+
+two:
+  name: MyString
+  population: 1
+  flag_url: MyString
+  lang: MyString
+  president: MyString
